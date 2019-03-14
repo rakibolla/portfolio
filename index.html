@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>My Portfolio Site</title>
+		<link rel="stylesheet" href="css/style.css" />
+	<style>
+	.mySlides{dispaly:none}
+	</style>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			
+			<header class="header">
+				<div class="logo">
+					<img src="img/hydlogo.jpg" class="logo-image" alt="logo-image">
+				</div>
+				<div class="header-text">
+					<h1 class="header-main-text">HYDERABAD</h1>
+					<h3 class="header-sub-text">The Captial Of Telangana</h3>
+				</div>
+			</header>
+			
+			<div class="hero">
+			<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="img/hyd8.jpg" style="width:100%">
+  <img class="mySlides" src="img/hyd1.jpg" style="width:100%">
+  <img class="mySlides" src="img/hyd7.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+			</div>		     
+			
+			<section class="featured-work">
+				<h2>Hyd Famous Places</h2>
+				<div class="featurettes">
+					<div class="featurette-box">
+						<img src="img/hyd3.jpg"
+					     srcset="img/hyd3.jpg 1200w,
+					             img/hyd3.jpg 700w"
+					     size="(min-width: 901px) 32vw,
+					           (min-width: 491px) and (max-width: 900px) 60vw,
+					           (max-width: 490px) 100vw"
+					     alt="hyd famous places" />
+						<h3>charminar</h3>
+						<a href="https://www.youtube.com/watch?v=BIub_fqm_bA" target="_blank"><u>a monument</u></a>
+					</div>
+					
+					<div class="featurette-box">
+						<img src="img/hyd4.jpg"
+					     srcset="img/hyd4.jpg 1200w,
+					             img/hyd4.jpg 700w"
+					     size="(min-width: 901px) 32vw,
+					           (min-width: 491px) and (max-width: 900px) 60vw,
+					           (max-width: 490px) 100vw"
+					     alt="Payments" />
+						<h3>hussain sagar</h3>
+						<a href="https://www.youtube.com/watch?v=fQ08ScdARdY" target="_blank"><u>gautam budha</u></a>
+					</div>
+					
+					<div class="featurette-box">
+						<img src="img/hyd9.jpg"
+					     srcset="img/hyd9.jpg 1200w,
+					             img/hyd9.jpg 700w"
+					     size="(min-width: 901px) 32vw,
+					           (min-width: 491px) and (max-width: 900px) 60vw,
+					           (max-width: 490px) 100vw"
+					     alt="Interior Design Website" />
+				  	<h3>birla mandir</h3>
+						<a href="https://www.youtube.com/watch?v=AdKLYQKYOmY" target="_blank"><u>a hindhu temple</u></a>
+					</div>
+				</div>
+			</section>
+			
+			<article class="article">
+			  <h2>About </h2>
+			  <p>
+			  Hyderabad is the captial of telangana. In the hyderabad many famous places are there like Charminar,Hussain sagar,Birlamandir,Imax....etc
+			  <p>
+			   The Charminar is a monument in Hyderabad, India. It is one of the tourist attractions in Hyderabad.The fifth ruler of the Qutb Shahi dynasty Sultan Muhammad Quli Qutb Shah built the Charminar in 1591.
+			  </p>
+			  
+			  <p>
+			 Hussain Sagar is a necklace shaped lake in Hyderabad built by Ibrahim Quli Qutb Shah, and named after Hussain Shah Wali.Hussain Sagar Lake, situated about 2 km from the heart of the city of Hyderabad
+			  </p>
+			  
+			  <p>
+			  	The construction of birla mandir took 10 years and was opened in 1976 by Swami Ranganathananda of Ramakrishna Mission. The temple was constructed by Birla Foundation, which has also constructed several similar temples across India, all of which are known as Birla Mandir. 
+			  </p>
+			</article>
+			
+			<footer class="footer">
+				 <p>&copy; 2018 B.AYYAPPA REDDY</p>
+			</footer>
+			
+		</div><!-- end of wrapper -->
+	</body>
+</html>
